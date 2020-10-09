@@ -36,7 +36,6 @@ export default function App() {
     <View style={{ margin: 10 }} key={index.toString()}>
       <Text>{shop.name}</Text>
       <Text>{shop.place}</Text>
-      <Text>hekk</Text>
     </View>
   ));
 
