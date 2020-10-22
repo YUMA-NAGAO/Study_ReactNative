@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, View } from "react-native";
-import * as firebase from "firebase";
-import "firebase/firestore";
-import {getShops } from "./src/lib/firebase";
+/* lib */
+import { getShops } from "./src/lib/firebase";
+/* type */
+import { Shop } from "./src/types/shop";
 
 export default function App() {
-  const [shops, setShop] = useState([]);
+  const [shops, setShops] = useState<Shop[]>([]);
 
   useEffect(() => {
     getFirebaseItems();
@@ -13,10 +14,9 @@ export default function App() {
 
   const getFirebaseItems = async () => {
     const shops = await getShops();
-    setShop(shops);
+    setShops(shops);
   };
 
-  // apisAreAvailable
   const shopItems = shops.map((shop, index) => (
     <View style={{ margin: 10 }} key={index.toString()}>
       <Text>{shop.name}</Text>
