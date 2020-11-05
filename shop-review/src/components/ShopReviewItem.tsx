@@ -1,14 +1,26 @@
-import react from "react";
-import { View, StyleSheet } from "react-native";
+import React from "react";
+import { View, StyleSheet ,Image,Text} from "react-native";
+// types
+import {Shop } from "../types/shop";
 
 type Props = {
-
+    shop: Shop;
 };
 
-export const ShopReviewItem: react.FC<Props> = ({ }: Props) => {
-    return <View style={styles.container} ></View>;
+export const ShopReviewItem: react.FC<Props> = ({shop }: Props) => {
+    const { name, place, imageUrl, score } = shop; 
+    return <View style={styles.container} >
+        <Image source={{ uri: imageUrl }} style={styles.image} />
+        <Text>{name}</Text>
+        <Text>{place }</Text>
+
+    </View>;
 }
 
 const styles = StyleSheet.create({
-    container: {}
+    container: {},
+    image: {
+        width: 100,
+        height:100,
+    }
 });
