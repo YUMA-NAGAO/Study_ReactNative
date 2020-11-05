@@ -1,26 +1,37 @@
 import React from "react";
-import { View, StyleSheet ,Image,Text} from "react-native";
+import { View,StyleSheet,Image,Text ,Dimensions} from "react-native";
+ 
 // types
-import {Shop } from "../types/shop";
-
+import { Shop} from "../types/shop";
+ 
+const { width } = Dimensions.get("window");
+const CONTAINER_WIDTH = width / 2;
+const PADDING = 16;
+const IMAGE_WIDTH = CONTAINER_WIDTH - PADDING * 2;
+ 
+ 
 type Props = {
     shop: Shop;
 };
-
-export const ShopReviewItem: react.FC<Props> = ({shop }: Props) => {
-    const { name, place, imageUrl, score } = shop; 
-    return <View style={styles.container} >
-        <Image source={{ uri: imageUrl }} style={styles.image} />
+ 
+export const ShopReviewItem: React.FC<Props> = ({ shop }: Props) => {
+    const { name, place, imageUrl, score } = shop;
+ 
+    return <View style={styles.container}>
+        <Image source={{uri:imageUrl}}style={styles.image} />
         <Text>{name}</Text>
-        <Text>{place }</Text>
-
+        <Text>{place}</Text>
+ 
     </View>;
 }
-
+ 
 const styles = StyleSheet.create({
-    container: {},
+    container: {
+        width: CONTAINER_WIDTH,
+        padding:16,
+    },
     image: {
-        width: 100,
-        height:100,
+        width: IMAGE_WIDTH,
+        height:IMAGE_WIDTH*0.7,
     }
 });
