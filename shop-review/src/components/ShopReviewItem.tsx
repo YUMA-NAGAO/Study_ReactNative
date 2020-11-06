@@ -21,7 +21,6 @@ export const ShopReviewItem: React.FC<Props> = ({ shop }: Props) => {
         <Image source={{uri:imageUrl}}style={styles.image} />
         <Text>{name}</Text>
         <Text>{place}</Text>
- 
     </View>;
 }
  
