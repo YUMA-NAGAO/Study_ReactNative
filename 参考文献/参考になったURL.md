@@ -10,4 +10,5 @@
    [設定]、[ネットワーク]、[Wi-Fi]に移動し、インターネット接続で利用可能なネットワーク、プロパティを表示して、[プライベート]をクリックします。その後、うまくいきました。あなたにも役立つことを願っています。
 
 #Mac のエラー編
-[「exp：コマンドが見つかりません」パスに expo cli を追加するにはどうすればよいですか？](https://stackoverflow.com/questions/51775496/exp-command-not-found-how-do-i-add-expo-cli-to-path)
+1. [「exp：コマンドが見つかりません」パスに expo cli を追加するにはどうすればよいですか？](https://stackoverflow.com/questions/51775496/exp-command-not-found-how-do-i-add-expo-cli-to-path)
+1. [[React Native]xcrun: error: unable to find utility “simctl”, not a developer tool or in PATH](https://medium.com/codespace69/react-native-xcrun-error-unable-to-find-utility-simctl-not-a-developer-tool-or-in-path-bd908d3551be)

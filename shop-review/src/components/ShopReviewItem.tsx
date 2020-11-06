@@ -16,7 +16,6 @@ type Props = {
  
 export const ShopReviewItem: React.FC<Props> = ({ shop }: Props) => {
     const { name, place, imageUrl, score } = shop;
- 
     return <View style={styles.container}>
         <Image source={{uri:imageUrl}}style={styles.image} />
         <Text>{name}</Text>
