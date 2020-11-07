@@ -12,7 +12,6 @@ type Props = {
 
 export const Stars: React.FC<Props> = ({ score,starSize=16,textSize=14}: Props) => {
     return <View style={styles.container} >
-        <FontAwesome name="star" style={styles.star} />
     </View>;
 }
 
@@ -22,4 +21,4 @@ const styles = StyleSheet.create({
         color: "#000",
         marginRight:4,
     }
-});
+}); 
