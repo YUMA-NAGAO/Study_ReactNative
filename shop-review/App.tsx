@@ -3,7 +3,11 @@ import { StyleSheet, Text, View } from "react-native";
 /* lib */
 import { getShops } from "./src/lib/firebase";
 // components
+<<<<<<< Updated upstream
 import {ShopReviewItem } from "./src/components/ShopReviewItem"
+=======
+import {ShopReviewItem } from "./src/conponents/ShopReviewItem"
+>>>>>>> Stashed changes
 /* type */
 import { Shop } from "./src/types/shop";
  
