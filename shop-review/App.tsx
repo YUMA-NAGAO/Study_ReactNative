@@ -3,7 +3,8 @@ import { StyleSheet, Text, View } from "react-native";
 /* lib */
 import { getShops } from "./src/lib/firebase";
 // components
-import {ShopReviewItem } from "./src/components/ShopReviewItem"
+import { ShopReviewItem } from "./src/components/ShopReviewItem"
+import { Stars } from "./src/components/Stars";
 /* type */
 import { Shop } from "./src/types/shop";
  
